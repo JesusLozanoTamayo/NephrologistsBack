@@ -19,6 +19,5 @@ public class ZoneDTO {
 		this.description = description;
 	}
 	
-	
-	
+
 }
