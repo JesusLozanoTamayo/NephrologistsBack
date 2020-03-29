@@ -14,10 +14,12 @@ public class CityModel {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
+	
 	@Column(name="description")
 	private String description;
+	
 	@Column(name="id_zone")
-	private String idZone;
+	private Long idZone;
 	
 	public Long getId() {
 		return id;
@@ -31,10 +33,10 @@ public class CityModel {
 	public void setDescription(String description) {
 		this.description = description;
 	}
-	public String getIdZone() {
+	public Long getIdZone() {
 		return idZone;
 	}
-	public void setIdZone(String idZone) {
+	public void setIdZone(Long idZone) {
 		this.idZone = idZone;
 	}
 	

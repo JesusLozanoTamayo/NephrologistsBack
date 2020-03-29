@@ -1,5 +1,7 @@
 package com.nephrologists.demo.model;
 
+import java.math.BigDecimal;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -14,14 +16,18 @@ public class NephrologistBaseClinicModel {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
+	
 	@Column(name="id_nephrologist")
-	private String idNephrologist; 
+	private Long idNephrologist; 
+	
 	@Column(name="id_clinic")
-	private String idClinic; 
+	private Long idClinic;
+	
 	@Column(name="salary")
-	private String salary;
+	private BigDecimal salary;
+	
 	@Column(name="dedicationHours")
-	private String dedicationHours;
+	private Integer dedicationHours;
 	
 	public Long getId() {
 		return id;
@@ -29,28 +35,32 @@ public class NephrologistBaseClinicModel {
 	public void setId(Long id) {
 		this.id = id;
 	}
-	public String getIdNephrologist() {
+	public Long getIdNephrologist() {
 		return idNephrologist;
 	}
-	public void setIdNephrologist(String idNephrologist) {
+	
+	public void setIdNephrologist(Long idNephrologist) {
 		this.idNephrologist = idNephrologist;
 	}
-	public String getIdClinic() {
+	
+	public Long getIdClinic() {
 		return idClinic;
 	}
-	public void setIdClinic(String idClinic) {
+	public void setIdClinic(Long idClinic) {
 		this.idClinic = idClinic;
 	}
-	public String getSalary() {
+	
+	public BigDecimal getSalary() {
 		return salary;
 	}
-	public void setSalary(String salary) {
+	public void setSalary(BigDecimal salary) {
 		this.salary = salary;
 	}
-	public String getDedicationHours() {
+	
+	public Integer getDedicationHours() {
 		return dedicationHours;
 	}
-	public void setDedicationHours(String dedicationHours) {
+	public void setDedicationHours(Integer dedicationHours) {
 		this.dedicationHours = dedicationHours;
 	}
 	

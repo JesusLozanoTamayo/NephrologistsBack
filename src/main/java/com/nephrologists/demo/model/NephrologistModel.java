@@ -14,14 +14,18 @@ public class NephrologistModel {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
+	
 	@Column(name="name")
 	private String name;
+	
 	@Column(name="id_nephrologist_type")
-	private String idNephrologistType; 
+	private Long idNephrologistType;
+	
 	@Column(name="email")
 	private String email;
+	
 	@Column(name="active")
-	private String active;
+	private Boolean active;
 	
 	public Long getId() {
 		return id;
@@ -35,10 +39,10 @@ public class NephrologistModel {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public String getIdNephrologistType() {
+	public Long getIdNephrologistType() {
 		return idNephrologistType;
 	}
-	public void setIdNephrologistType(String idNephrologistType) {
+	public void setIdNephrologistType(Long idNephrologistType) {
 		this.idNephrologistType = idNephrologistType;
 	}
 	public String getEmail() {
@@ -47,10 +51,11 @@ public class NephrologistModel {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	public String getActive() {
+	
+	public Boolean getActive() {
 		return active;
 	}
-	public void setActive(String active) {
+	public void setActive(Boolean active) {
 		this.active = active;
 	}
 	

@@ -1,5 +1,7 @@
 package com.nephrologists.demo.model;
 
+import java.math.BigInteger;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -14,20 +16,27 @@ public class ClinicModel {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
+	
 	@Column(name="name")
 	private String name;
+	
 	@Column(name="administrator")
 	private String administrator;
+	
 	@Column(name="email")
 	private String email;
+	
 	@Column(name="director")
 	private String director;
+	
 	@Column(name="id_city")
-	private String idCity;
+	private Long idCity;
+	
 	@Column(name="capacity")
-	private String capacity;
+	private BigInteger capacity;
+	
 	@Column(name="id_clinic_type")
-	private String idClinicType;
+	private Long idClinicType;
 	
 	public Long getId() {
 		return id;
@@ -59,22 +68,22 @@ public class ClinicModel {
 	public void setDirector(String director) {
 		this.director = director;
 	}
-	public String getIdCity() {
+	public Long getIdCity() {
 		return idCity;
 	}
-	public void setIdCity(String idCity) {
+	public void setIdCity(Long idCity) {
 		this.idCity = idCity;
 	}
-	public String getCapacity() {
+	public BigInteger getCapacity() {
 		return capacity;
 	}
-	public void setCapacity(String capacity) {
+	public void setCapacity(BigInteger capacity) {
 		this.capacity = capacity;
 	}
-	public String getIdClinicType() {
+	public Long getIdClinicType() {
 		return idClinicType;
 	}
-	public void setIdClinicType(String idClinicType) {
+	public void setIdClinicType(Long idClinicType) {
 		this.idClinicType = idClinicType;
 	}
 	
