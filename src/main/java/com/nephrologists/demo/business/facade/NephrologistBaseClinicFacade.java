@@ -8,7 +8,7 @@ import com.nephrologists.demo.model.NephrologistBaseClinicModel;
 
 public class NephrologistBaseClinicFacade {
 	
-	public NephrologistBaseClinicModel obtenerCityModel(NephrologistBaseClinicDTO nephrologistBaseClinicDTO) {
+	public NephrologistBaseClinicModel obtenerNephrologistBaseClinicModel(NephrologistBaseClinicDTO nephrologistBaseClinicDTO) {
 
 		NephrologistBaseClinicModel nephrologistBaseClinicModel = new NephrologistBaseClinicModel();
 		nephrologistBaseClinicModel.setId(nephrologistBaseClinicDTO.getId());

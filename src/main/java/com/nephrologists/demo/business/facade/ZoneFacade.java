@@ -8,7 +8,7 @@ import com.nephrologists.demo.model.ZoneModel;
 
 public class ZoneFacade {
 	
-	public ZoneModel obtenerCityModel(ZoneDTO zoneDTO) {
+	public ZoneModel obtenerZoneModel(ZoneDTO zoneDTO) {
 
 		ZoneModel zoneModel = new ZoneModel();
 		zoneModel.setId(zoneDTO.getId());
@@ -18,7 +18,7 @@ public class ZoneFacade {
 	}
 	
 	
-	public ZoneDTO obtenerCityDTO(ZoneModel zoneModel) {
+	public ZoneDTO obtenerZoneDTO(ZoneModel zoneModel) {
 
 		ZoneDTO zoneDTO = new ZoneDTO();
 		zoneDTO.setId(zoneModel.getId());
@@ -27,7 +27,7 @@ public class ZoneFacade {
 		return zoneDTO;
 	}
 	
-	public List<ZoneDTO> obtenerCityDtoList(List<ZoneModel> zoneModelLst) {
+	public List<ZoneDTO> obtenerZoneDtoList(List<ZoneModel> zoneModelLst) {
 
 		List<ZoneDTO> lstZoneDTO = new ArrayList<>();
 		zoneModelLst.stream().forEach(a -> {

@@ -20,7 +20,7 @@ public class UserFacade {
 	}
 	
 	
-	public UserDTO obtenerCityDTO(UserModel userModel) {
+	public UserDTO obtenerUserDTO(UserModel userModel) {
 
 		UserDTO userDTO = new UserDTO();
 		userDTO.setId(userModel.getId());
@@ -31,7 +31,7 @@ public class UserFacade {
 		return userDTO;
 	}
 	
-	public List<UserDTO> obtenerCityDtoList(List<UserModel> userModelLst) {
+	public List<UserDTO> obtenerUserDtoList(List<UserModel> userModelLst) {
 
 		List<UserDTO> lstUserDTO = new ArrayList<>();
 		userModelLst.stream().forEach(a -> {

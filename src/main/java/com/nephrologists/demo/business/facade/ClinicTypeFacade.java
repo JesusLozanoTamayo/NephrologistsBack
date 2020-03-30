@@ -18,7 +18,7 @@ public class ClinicTypeFacade {
 	}
 	
 	
-	public ClinicTypeDTO obtenerCityDTO(ClinicTypeModel clinicTypeModel) {
+	public ClinicTypeDTO obtenerClinicTypeDTO(ClinicTypeModel clinicTypeModel) {
 
 		ClinicTypeDTO clinicTypeDTO = new ClinicTypeDTO();
 		clinicTypeDTO.setId(clinicTypeModel.getId());
@@ -27,7 +27,7 @@ public class ClinicTypeFacade {
 		return clinicTypeDTO;
 	}
 	
-	public List<ClinicTypeDTO> obtenerCityDtoList(List<ClinicTypeModel> clinicTypeModelLst) {
+	public List<ClinicTypeDTO> obtenerClinicTypeDtoList(List<ClinicTypeModel> clinicTypeModelLst) {
 
 		List<ClinicTypeDTO> lstClinicTypeDTO = new ArrayList<>();
 		clinicTypeModelLst.stream().forEach(a -> {
